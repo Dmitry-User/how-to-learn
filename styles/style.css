@@ -118,8 +118,8 @@
   font-weight: 400;
 }
 
-.two-columns__paragraph:not(:last-child) {
-  margin: 0 0 30px 0;
+.two-columns__paragraph:not(:first-child) {
+  margin: 30px 0 0 0;
 }
 
 .two-columns__span-accent {
@@ -139,7 +139,7 @@
 
 .section-title {
   width: 60%;
-  margin: 0 0 20px 0;
+  margin: 0;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
@@ -148,7 +148,7 @@
 
 .section-subtitle {
   width: 60%;
-  margin: 0;
+  margin: 20px 0 0 0;
   text-align: center;
   line-height: 34px;
   font-size: 24px;
@@ -159,7 +159,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1100px;
+  width: 1100px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -171,21 +171,17 @@
 }
 
 .table__heading {
-  margin: 0 0 20px 0;
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
 }
 
 .table__text {
-  margin: 0;
+  margin: 20px 0 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
-}
-
-.table__text_indent-top {
-  margin: 20px 0 0 0;
 }
 
 /* Стили секции feynman */
@@ -206,7 +202,7 @@
 
 .feynman__title {
   width: 648px;
-  margin: 0 0 70px 0;
+  margin: 0;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
@@ -214,7 +210,7 @@
 }
 
 .feynman__subtitle {
-  margin: 0;
+  margin: 70px 0 0 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: 400;
@@ -261,6 +257,7 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
+  z-index: 1;
 }
 
 .table_theme_dark {
@@ -312,16 +309,12 @@
   flex-basis: 711px;
 }
 
-.logo {
-  width: 183px;
-}
-
 .logo_place_footer {
   height: 35px;
 }
 
 .footer__author {
-  margin: 0;
+  margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: 400;
