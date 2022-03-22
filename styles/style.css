@@ -192,7 +192,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 890px;
+  min-height: 890px;
   padding: 100px 0 0 0;
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
@@ -228,7 +228,7 @@
   color: #2f80ed;
 }
 
-/* Стили секции feynman */
+/* Стили секции kaufman */
 
 .kaufman {
   display: flex;
@@ -247,6 +247,8 @@
   position: absolute;
   top: 0;
   right: -210px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
 }
 .section-title_theme_dark {
   line-height: 1.15;
@@ -347,7 +349,7 @@
   color: #fff;
 }
 
-.footer__column_content_socialt {
+.footer__column_content_social {
   justify-content: flex-start;
 }
 
