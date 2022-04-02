@@ -1,0 +1,14 @@
+.header {
+  width           : 100%;
+  height          : 100vh;
+  min-height      : 600px;
+  max-height      : 756px;
+  display         : flex;
+  justify-content : flex-start;
+  align-items     : center;
+  box-sizing      : border-box;
+  padding-left    : 64px;
+  position        : relative;
+  background-color: #f2f2f2;
+  overflow        : hidden;
+}

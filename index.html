@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./index.css">
   <title>Научиться учиться</title>
 </head>
 <body>
@@ -13,7 +12,7 @@
       <img src="./images/logo_place_header.svg" alt="Логотип" class="logo logo_place_header">
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
-        <a href="#" class="header__link">Узнать &rarr;</a>
+        <a href="#" class="header__link link-hover" target="_blank" rel="noopener noreferrer">Узнать &rarr;</a>
       </p>
       <div class="header__square-pic rotation"></div>
       <div class="header__main-illustration"></div>
@@ -63,10 +62,28 @@
         </ul>
       </section>
 
+      <section class="video">
+        <h2 class="section-title">Видео нa TED</h2>
+        <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+        <div class="video__iframes">
+          <iframe class="video__iframe" id="ytplayer" type="text/html" src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
+          <iframe class="video__iframe" id="ytplayer" type="text/html" src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section class="oakley">
+        <div class="two-columns">
+          <h2 class="two-columns__brief">История Барбары Оакли.</h2>
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.</p>
+          </div>
+        </div>
+      </section>
+
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <a href="" class="feynman__link">Подробнее 	&rarr;</a>
+        <a href="" class="feynman__link link-hover" target="_blank" rel="noopener noreferrer">Подробнее 	&rarr;</a>
       </section>
 
       <section class="digits">
@@ -108,6 +125,22 @@
             <p class="table__text">Открытие условного рефлекса</p>
           </li>
         </ul>
+      </section>
+
+      <section class="khan">
+        <div class="khan__container">
+          <p class="khan__author">Салман Хан</p>
+          <h2 class="khan__title">Весь мир — школа</h2>
+          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
+          <h3 class="khan__quote-author">Джордж Лукас</h3>
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+          <div class="khan__book-container">
+            <img src="./images/khan-book.jpg" alt="Обложка книги" class="khan__book-pic">
+            <div>
+              <a class="khan__buy-link link-hover" href="#" target="_blank" rel="noopener noreferrer">Купить книгу &rarr;</a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="kaufman">
@@ -155,7 +188,30 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ul>
-        <div class="kaufman__triangle"></div>
+        <div class="kaufman__triangle rotation"></div>
+      </section>
+
+      <section class="resources">
+        <h2 class="section-title">Полезные ресурсы</h2>
+        <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+        <ul class="resources__logo-zone">
+          <li><a class="resources__link link-hover" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="Ссылка на сайт Арзамас">
+            </a>
+          </li>
+          <li><a class="resources__link link-hover" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="resources__logo" src="./images/logo/resources-n1.svg" alt="Ссылка на сайт Н+1">
+            </a>
+          </li>
+          <li><a class="resources__link link-hover" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="resources__logo" src="./images/logo/resources-strelka.svg" alt="Ссылка на сайт Стрелка">
+            </a>
+          </li>
+          <li><a class="resources__link link-hover" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="resources__logo" src="./images/logo/resources-polka.svg" alt="Ссылка на сайт Полка">
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
 
@@ -168,24 +224,24 @@
         <nav class="footer__column footer__column_content_info">
           <h3 class="footer__column-heading">О Практикуме</h3>
           <ul class="footer__column-links">
-            <li><a class="footer__column-link" href="#">Главная</a></li>
-            <li><a class="footer__column-link" href="#">Концепция</a></li>
-            <li><a class="footer__column-link" href="#">Наставники</a></li>
+            <li><a class="footer__column-link link-hover" href="#">Главная</a></li>
+            <li><a class="footer__column-link link-hover" href="#">Концепция</a></li>
+            <li><a class="footer__column-link link-hover" href="#">Наставники</a></li>
           </ul>
         </nav>
         <nav class="footer__column footer__column_content_social">
           <h3 class="footer__column-heading">Соцсети</h3>
           <ul class="footer__column-links">
             <li>
-              <a class="footer__column-link" href="#" target="_blank">
+              <a class="footer__column-link link-hover" href="#" target="_blank" target="_blank" rel="noopener noreferrer">
                 <img src="./images/facebook_color_white.svg" alt="Ссылка Фейсбук" class="footer__social-icon">Facebook</a>
             </li>
             <li>
-              <a class="footer__column-link" href="#" target="_blank">
+              <a class="footer__column-link link-hover" href="#" target="_blank" target="_blank" rel="noopener noreferrer">
                 <img src="./images/vk_color_white.svg" alt="Ссылка ВКонтакте" class="footer__social-icon">ВКонтакте</a>
             </li>
             <li>
-              <a class="footer__column-link" href="#" target="_blank">
+              <a class="footer__column-link link-hover" href="#" target="_blank" target="_blank" rel="noopener noreferrer">
                 <img src="./images/instagram_color_white.svg" alt="Ссылка Инстаграм" class="footer__social-icon">Instagram</a>
             </li>
           </ul>
