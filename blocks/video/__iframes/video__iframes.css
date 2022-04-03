@@ -1,5 +1,5 @@
 .video__iframes {
   display: flex;
-  margin: 50px auto -60px auto;
+  margin : 50px auto -60px auto;
   z-index: 1;
 }
